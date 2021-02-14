@@ -1,0 +1,19 @@
+.quiz{
+    margin-top: 20px;
+}
+.center{
+    text-align: center;
+}
+.title{
+    width: 500px;
+    font-size: 30px;
+}
+
+.error{
+    border: 2px solid red;
+}
+.errorText{
+    position: absolute;
+    color: red;
+    font-size: 30px;
+}
