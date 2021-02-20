@@ -1,0 +1,67 @@
+.block {
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 540px;
+}
+.button{
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    width: 50px;
+    margin: 20px auto;
+}
+.answer{
+    background-color: yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    width: 230px;
+    height: 150px;
+}
+.noQuiz{
+}
+.question{
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+.counter{
+    text-align: center;
+    width: 100%;
+}
+.right{
+    background-color: limegreen;
+}
+.wrong{
+    background-color: red;
+}
+.buttonNext{
+    position: relative;
+    top: 0;
+    box-shadow: 3px 3px 2px black;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    margin: 0 auto 15px;
+    padding: 1em;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+.buttonNext:active{
+    top: 2px;
+    box-shadow: 1px 1px 2px black;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: limegreen;
+}

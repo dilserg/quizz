@@ -1,8 +1,9 @@
 import styles from './App.module.css';
 import Header from './components/Header/Header';
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
-import AllQuizzes from './components/AllQuizzes/AllQuizzes';
 import CreateNewQuiz from './components/CreateNewQuizz/CreateNewQuiz';
+import AllQuizzesContainer from './components/AllQuizzes/AllQuizzesContainer';
+import QuizContainer from './components/Quiz/QuizContainer';
 
 function App() {
   return (
@@ -12,10 +13,13 @@ function App() {
         <div className={styles.content}>
           <Switch>
             <Route path='/home'>
-              <AllQuizzes/>
+              <AllQuizzesContainer/>
             </Route>
             <Route path='/create'>
               <CreateNewQuiz/>
+            </Route>
+            <Route path='/quiz/:id?'>
+              <QuizContainer/>
             </Route>
             <Route>
               <Redirect to='/home'/>

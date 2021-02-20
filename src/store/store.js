@@ -1,7 +1,9 @@
 import {combineReducers, createStore} from 'redux';
+import quizzesReducer from './quizzesReducer';
 
 const reducers = combineReducers({
-  main:null
+  quizzes:quizzesReducer,
 })
 
 export const store = createStore(reducers)
+window.store = store

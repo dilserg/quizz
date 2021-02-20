@@ -1,0 +1,29 @@
+.link{
+    text-decoration: none;
+    color: black;
+}
+.block{
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    width: 313px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    background-color: yellow;
+    box-shadow: 3px 3px 3px black;
+    transition: all ease .2s;
+}
+.block:active{
+    top: 2px;
+    box-shadow: 1px 1px 3px black;
+}
+.title{
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+.count{
+    font-size: 24px;
+    padding-left: 20px;
+}

@@ -10,10 +10,43 @@
 }
 
 .error{
-    border: 2px solid red;
+    border: 3px solid red;
 }
-.errorText{
-    position: absolute;
-    color: red;
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+.submitButton, .addButton{
+    position: relative;
+    top: 0;
+    border: none;
+    box-shadow: 3px 3px 2px black;
+    border-radius: 20px;
+    transition: all .1s ease;
+}
+.addButton{
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 25px;
+    height: 35px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.submitButton{
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    color: white;
     font-size: 30px;
+    background-color: green;
+}
+.submitButton:focus,.addButton:focus{
+    outline: none;
+}
+.submitButton:active,.addButton:active{
+    top:2px;
+    box-shadow: black 1px 1px 2px;
 }

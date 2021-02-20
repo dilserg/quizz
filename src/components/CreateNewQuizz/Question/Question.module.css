@@ -1,0 +1,39 @@
+.question{
+    position: relative;
+    box-shadow: 2px 2px 3px black;
+    padding: 20px;
+    margin: 20px;
+    width: calc(100% - 80px);
+    background-color: yellow;
+}
+.question input[type=text]{
+    font-size: 20px;
+    width: calc(100% - 50px);
+    margin-right: 10px;
+}
+.title{
+    margin-bottom: 10px;
+}
+.title:last-child{
+    margin-bottom: 0;
+}
+.delete{
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+.radio{
+    border-radius: 80%;
+    display: inline-block;
+}
+.radio input{
+    position: relative;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+}
+.error{
+    background-color: red;
+}

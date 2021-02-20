@@ -4,14 +4,13 @@ import styles from './CreateNewQuiz.module.css'
 const TitleInput = ({input, meta, ...props}) => {
   const className = () =>{
     if (meta.touched && meta.error){
-      return styles.error +" "+ styles.title
-    }else return styles.title
+      return styles.error + " " + props.mystyle
+    }else return props.mystyle
   }
   
   return (
     <>
-      <input autoComplete="off" placeholder='Name your quiz' className={className()} {...input} {...props}/>
-      {meta.touched && meta.error ? <span className={styles.errorText}>{meta.error}</span>:undefined}
+      <input autoComplete="off" placeholder={props.myplaceholder} className={className()} {...input} {...props}/>
     </>
   );
 };

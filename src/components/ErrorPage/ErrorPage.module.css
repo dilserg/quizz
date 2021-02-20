@@ -1,0 +1,11 @@
+.error img{
+    height: 200px;
+}
+.error div{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.error{
+    text-align: center;
+    margin-top: 100px;
+}
